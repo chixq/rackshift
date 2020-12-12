@@ -22,7 +22,43 @@ RackShift 是完全开源的裸金属服务器装机管理平台，功能覆盖�
 
 ## 功能列表
 
-<table class="wrapped confluenceTable"><colgroup><col><col></colgroup><tbody><tr><td class="confluenceTd">自动化</td><td class="confluenceTd">支持主流品牌裸金属服务器的 PXE / IPMI / SNMP / HTTP 自动发现与自动配置</td></tr><tr><td class="confluenceTd">速度</td><td class="confluenceTd">无人值守安装 Ubuntu， CentOS, Windows 和 RHEL，部署完毕只需要重启一次，整个部署时间不超过8分钟</td></tr><tr><td colspan="1" class="confluenceTd">信息纳管</td><td colspan="1" class="confluenceTd">收集硬件设备信息， CPU， 内存， RAID 控制器， 磁盘， 网卡等，自动检测硬件变更</td></tr><tr><td colspan="1" class="confluenceTd">网络探测</td><td colspan="1" class="confluenceTd">支持通过多种协议自动探测网络中的硬件设备</td></tr><tr><td colspan="1" class="confluenceTd">存储优化</td><td colspan="1" class="confluenceTd">用户可选的 RAID ， Bcache ，LVM 存储配置</td></tr><tr><td colspan="1" class="confluenceTd">多样的管理工具</td><td colspan="1" class="confluenceTd">支持多种品牌的官方管理工具如 DELL Racadm，HP SMH 等等</td></tr></tbody></table>
+<table> 
+   <tbody> 
+    <tr> 
+     <td>自动发现</td> 
+     <td>支持主流品牌裸金属服务器，通过带外控制卡，IPMI 协议，PXE 网络自动发现</td> 
+    </tr> 
+    <tr> 
+     <td rowspan="2">设备纳管</td> 
+     <td>收集硬件设备信息， CPU， 内存， RAID 控制器， 磁盘， 网卡等，自动检测硬件变更</td> 
+    </tr> 
+     <tr>
+       <td>支持纳管设备带外远程开机、关机、重启等电源操作</td>
+     </tr>
+    <tr> 
+     <td rowspan="2">无人值守安装</td> 
+     <td>支持安装 Ubuntu， CentOS, Windows 和 RHEL 等操作系统，部署完毕只需要重启一次，整个部署时间不超过8分钟</td> 
+    </tr> 
+    <tr> 
+     <td>支持用户配置 RAID 等存储配置</td> 
+    </tr> 
+    <tr> 
+     <td>跨网域支持</td> 
+     <td>支持配置代理节点，实现复杂网络下统一发现、安装、运维</td>
+    </tr>
+    <tr> 
+     <td rowspan="2">任务流支持</td> 
+     <td>支持针对品牌配置不同任务流，实现重置、安装、配置流水线</td>
+    </tr>
+    <tr> 
+     <td>支持批量执行任务流，统一实时查看任务详情</td>
+    </tr>
+    <tr> 
+     <td>被集成能力</td> 
+     <td>支持完整裸金属生命周期管理 Restful API，快速集成与被集成</td>
+    </tr>
+   </tbody> 
+  </table>
 
 详细的版本规划请参考 [版本路线图](https://github.com/rackshift/rackshift/blob/master/ROADMAP.md)  
 
